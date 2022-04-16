@@ -20,7 +20,7 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
     const size = basicSize + i * 10;
     const div = document.createElement("div");
-    div.style.cssText = `width: ${size}px; height: ${size}px; background-color: rgba( ${random()} , ${random()} , ${random()} )`;
+    div.style.cssText = `width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()}`;
     fragment.appendChild(div);
   }
   boxes.appendChild(fragment);
